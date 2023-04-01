@@ -9,7 +9,7 @@ public class Controller {
 
     @GetMapping("/health")
     public @ResponseBody String healthCheck() {
-        String msg = "잘 실행되었습니다.";
+        String msg = "잘 실행되었습니다. UP";
         return msg;
     }
 
