@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class Controller {
 
-    @GetMapping("/hello")
-    public @ResponseBody String hello() {
-        String msg = "안녕하세요 반갑습니다!";
+    @GetMapping("/health")
+    public @ResponseBody String healthCheck() {
+        String msg = "잘 실행되었습니다.";
         return msg;
     }
 
