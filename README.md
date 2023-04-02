@@ -19,7 +19,7 @@ AWS CI/CD 배포 실험용 리포
 - `Deploy tool` : AWS CodeDeploy
 
 ### workflow
-![img.png](img.png)
+![workflowchart.png](workflowchart.png)
 
 ---
 # Gradle
