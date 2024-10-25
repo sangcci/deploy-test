@@ -8,9 +8,9 @@ CI/CD 배포 실험용 리포
 ---
 ### AWS CodeBuild / CodeDeploy
 
-![workflowchart.png](img/aws cicd flow.png)
+![workflowchart.png](img/aws%20cicd%20flow.png)
 
 ---
 ### Github Actions
 
-![github actions flow.png](img/github actions flow.png)
+![github actions flow.png](img/github%20actions%20flow.png)
