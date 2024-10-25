@@ -5,4 +5,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'Spring_SimpleAPI'
+rootProject.name = 'deploy-test'
