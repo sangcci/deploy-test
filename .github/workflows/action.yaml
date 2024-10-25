@@ -38,7 +38,9 @@ jobs:
 
       # gradle build
       - name: Build with Gradle
-        run: ./gradlew build
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build
 
       # docker build & push
       - name: Docker build & push
