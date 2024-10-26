@@ -1,7 +1,7 @@
 # Deploy test
 CI/CD 배포 실험용 리포
 
-### API 명세
+### API
 | Description | Method | URL     | Request Body           | Response Body |
 |------------|--------|---------|------------------------|---------------|
 | 테스트용       | GET         | /health |                 | String: "잘 실행되었습니다. UP" |
@@ -20,3 +20,5 @@ CI/CD 배포 실험용 리포
 - [Github Actions를 이용해 CI 구성하기 (Java, Gradle, Jacoco) - Shef](https://velog.io/@sontulip/github-actions-ci)
 - [actions/cache/Java - Gradle - github actions](https://github.com/actions/cache/blob/main/examples.md#java---gradle)
 - [Gradle 프로젝트에 JaCoCo 설정하기 - 우아한 기술 블로그 연철](https://techblog.woowahan.com/2661/)
+- [JaCoCo Report - github marketplace](https://github.com/marketplace/actions/jacoco-report)
+- [CI/CD를 구축해보자2 - JaCoCo와 GitHub Actions으로 CI/CD구축해보기(추가: Report to PR) - Jeonghwa](https://velog.io/@gjwjdghk123/CI-CD2)
