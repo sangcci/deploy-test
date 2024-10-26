@@ -24,14 +24,30 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    finalizedBy jacocoTestReport // 테스트가 끝난 후 리포트를 생성하도록 설정
+    finalizedBy jacocoTestReport, jacocoTestCoverageVerification // 테스트가 끝난 후 리포트를 생성하도록 설정
 }
 
 jacocoTestReport {
     dependsOn test // 테스트 태스크가 실행된 후 리포트 생성
     reports {
-        xml.required = false
+        xml.required = true
         csv.required = false
         html.required = true
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element 'CLASS'
+            limit {
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.8 // 테스트 커버리지 최소 80%
+            }
+
+            // 커버리지 체크를 제외할 클래스들
+            excludes = ['*.*Controller', '*.dto.*', '*.config.*', '*.domain.Q*']
+        }
     }
 }
