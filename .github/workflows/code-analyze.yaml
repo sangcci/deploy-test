@@ -44,7 +44,7 @@ jobs:
       # jacoco
       - name: Upload Jacoco Report
         if: ${{ failure() }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jacoco-report # 결과물의 이름
-          path: ${{ github.workspace }}/build/reports/jacoco/test/html # upload하고자 하는 파일 또는 디렉토리 경로
+          path: ${{ github.workspace }}/build/reports/jacoco/test/html/* # upload하고자 하는 파일 또는 디렉토리 경로
