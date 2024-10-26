@@ -42,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-report # 결과물의 이름
-          path: build/reports/jacoco/test/html # upload하고자 하는 파일 또는 디렉토리 경로
+          path: ${{ github.workspace }}/build/reports/jacoco/test/html # upload하고자 하는 파일 또는 디렉토리 경로
