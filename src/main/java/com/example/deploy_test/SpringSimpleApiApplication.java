@@ -1,4 +1,4 @@
-package com.example.spring_simpleapi;
+package com.example.deploy_test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
